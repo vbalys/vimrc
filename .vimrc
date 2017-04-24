@@ -121,8 +121,6 @@ augroup pythongroup
     autocmd!
     autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
     autocmd FileType python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-    autocmd FileType python source ~/.vim/scripts/python-shortcuts.vim
-    autocmd FileType python source ~/.vim/scripts/python_fold.vim
 augroup END
 
 "--- Perl ---"
