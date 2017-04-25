@@ -58,6 +58,25 @@ set runtimepath^=~/.vim/ctrlp.vim
 set splitbelow "split down
 set splitright "split to the right
 
+set ttyfast
+set history=1000
+set undofile
+set undodir=~/.vim/tmp/undo//
+set backupdir=~/.vim/tmp/backup//
+set noswapfile
+set backup
+set shell=/bin/bash\ --login
+set showbreak=↪
+set fillchars=diff:⣿,vert:│
+set autowrite
+set autoread
+set title
+set ignorecase
+set smartcase
+set gdefault
+set fo-=t
+set complete=.,w,b,u,t
+
 "=== Plugins configuration ==="
 
 "--- NERDTree ---"
