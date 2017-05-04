@@ -4,7 +4,7 @@
 # VIM modeline 
 snippet vmod
 
-	// vim: xet et ft=php ts=4 sw=4 sts=4 bs=2 fenc=utf-8:
+	// vim: set et ft=php ts=4 sw=4 sts=4 bs=2 fenc=utf-8:
 #
 # Namespace declaration
 snippet ns
@@ -12,67 +12,85 @@ snippet ns
 #
 # Public method
 snippet pubmet
-		/**
-		 * ${1:Description}.
-		 * 
-		 * @return void
-		 */
-		public function ${2:name}(${3})
-		{
-			${4://code}
-		}
+	/**
+	 * ${1:Description}
+	 *
+	 * @return void
+	 */
+	public function ${2:name}(${3})
+	{
+	 	${4://code}
+	}
 #
 # Private method
 snippet primet
-		/**
-		 * ${1:Description}.
-		 * 
-		 * @return void
-		 */
-		private function ${2:name}(${3})
-		{
-			${4://code}
-		}
+	/**
+	 * ${1:Description}
+	 *
+	 * @return void
+	 */
+	private function ${2:name}(${3})
+	{
+		${4://code}
+	}
 #
 # Protected method
 snippet promet
-		/**
-		 * ${1:Description}.
-		 * 
-		 * @return void
-		 */
-		protected function ${2:name}(${3})
-		{
-			${4://code}
-		}
+	/**
+	 * ${1:Description}
+	 * 
+	 * @return void
+	 */
+	protected function ${2:name}(${3})
+	{
+		${4://code}
+	}
 #
 # Just method
 snippet met
-		/**
-		 * ${1:Description}.
-		 * 
-		 * @return void
-		 */
-		public function ${2:name}(${3})
-		{
-			${4://code}
-		}
+	/**
+	 * ${1:Description}
+	 * 
+	 * @return void
+	 */
+	public function ${2:name}(${3})
+	{
+		${4://code}
+	}
 #
 # Constructor
 snippet con
-		/**
-		 * ${1:Create a new instance}.
-		 * 
-		 * @return void
-		 */
-		public function __construct(${3})
-		{
-			${4://code}
-		}
+	/**
+	 * ${1:Create a new instance}
+	 * 
+	 * @return void
+	 */
+	public function __construct(${3})
+	{
+		${4://code}
+	}
 #
 # $this->
 snippet $
 	$this->
+#
+# Protected attribute
+snippet proatt
+	/**
+	 * ${1:Description}
+	 *
+	 * @var ${2:string}
+	 */
+	protected $${3:name};
+#	
+# Just attribute
+snippet att
+	/**
+	 * ${1:Description}
+	 *
+	 * @var ${2:string}
+	 */
+	protected $${3:name};
 #
 # Original snippets
 #
@@ -81,7 +99,7 @@ snippet php
 
 	${1}
 
-	// vim: xet et ft=php ts=4 sw=4 sts=4 bs=2 fenc=utf-8:
+	// vim: set et ft=php ts=4 sw=4 sts=4 bs=2 fenc=utf-8:
 snippet ec
 	echo "${1:string}"${2};
 snippet inc
