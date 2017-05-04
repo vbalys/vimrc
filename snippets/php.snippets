@@ -1,13 +1,84 @@
 #
 # My snippets
 # 
+# VIM modeline 
 snippet vmod
-	// vim: set et ft=php ts=4 sw=4 sts=4 bs=2 fenc=utf-8:
+
+	// vim: xet et ft=php ts=4 sw=4 sts=4 bs=2 fenc=utf-8:
+#
+# Namespace declaration
+snippet ns
+	namespace ${1}
+#
+# Public method
+snippet pubmet
+		/**
+		* ${1:Description}.
+		* 
+		* @return void
+		*/
+		public function ${2:name}(${3})
+		{
+			${4://code}
+		}
+#
+# Private method
+snippet primet
+		/**
+		* ${1:Description}.
+		* 
+		* @return void
+		*/
+		private function ${2:name}(${3})
+		{
+			${4://code}
+		}
+#
+# Protected method
+snippet promet
+		/**
+		* ${1:Description}.
+		* 
+		* @return void
+		*/
+		protected function ${2:name}(${3})
+		{
+			${4://code}
+		}
+#
+# Just method
+snippet met
+		/**
+		* ${1:Description}.
+		* 
+		* @return void
+		*/
+		public function ${2:name}(${3})
+		{
+			${4://code}
+		}
+#
+# Constructor
+snippet con
+		/**
+		* ${1:Description}.
+		* 
+		* @return void
+		*/
+		public function __construct(${3})
+		{
+			${4://code}
+		}
+#
+# $this->
+snippet $
+	$this->
 #
 # Original snippets
 #
 snippet php
 	<?php
+
 	${1}
 snippet ec
 	echo "${1:string}"${2};
