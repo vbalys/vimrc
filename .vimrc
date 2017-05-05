@@ -71,8 +71,7 @@ set fillchars=diff:⣿,vert:│
 set autowrite
 set autoread
 set title
-set ignorecase
-set smartcase
+set noignorecase
 set gdefault
 set fo-=t
 set complete=.,w,b,u,t
@@ -174,6 +173,7 @@ nmap <F3> :TlistToggle<CR>
 "--- Misc ---"
 nmap <F2> :NERDTreeToggle<CR>
 nmap ,<space> :nohlsearch<CR>
+nnoremap <F5> :buffers<CR>:buffer<Space>
 
 "=== Tips ==="
 " zz -- center on current line
@@ -184,3 +184,5 @@ nmap ,<space> :nohlsearch<CR>
 " ,pf -- php cs fixer
 " Uppercase mark is global
 " mark 0 -- place of last modification
+" C-6 / C-^ -- switches to previous buffer
+" F5 -- fast selection of buffer
