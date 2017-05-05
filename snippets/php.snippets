@@ -74,6 +74,10 @@ snippet con
 snippet $
 	$this->
 #
+# $this->
+snippet $t
+	$this->
+#
 # Protected attribute
 snippet proatt
 	/**
@@ -91,6 +95,22 @@ snippet att
 	 * @var ${2:string}
 	 */
 	protected $${3:name};
+#
+# Test method
+snippet tmet
+	/**
+	 * @test
+	 *
+	 * @return void
+	 */
+	public function ${1:name}()
+	{
+	 	${2://code}
+	}
+#
+# $this->assert
+snippet ass
+	$this->assert
 #
 # Original snippets
 #
