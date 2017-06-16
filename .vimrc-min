@@ -45,18 +45,21 @@ set wildmode=list:longest,full "command completion order
 set nolist
 set listchars=eol:$,tab:»·,trail:.
 let &sbr = nr2char(8618).' ' " Show ↪ at the beginning of wrapped lines
-set colorcolumn=80
 set runtimepath^=~/.vim/ctrlp.vim
 set splitbelow "split down
 set splitright "split to the right
 
+if v:version > 703
+    set colorcolumn=80
+    set undofile
+    set undodir=~/.vim/tmp/undo//
+endif
+
 set ttyfast
 set history=1000
-set undofile
-set undodir=~/.vim/tmp/undo//
+set backup
 set backupdir=~/.vim/tmp/backup//
 set noswapfile
-set backup
 set shell=/bin/bash\ --login
 set showbreak=↪
 set fillchars=diff:⣿,vert:│
