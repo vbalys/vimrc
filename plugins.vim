@@ -17,5 +17,6 @@ Plugin 'StanAngeloff/php.vim'
 Plugin 'ervandew/supertab'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'pangloss/vim-simplefold'
 
 call vundle#end()     

@@ -141,12 +141,6 @@ augroup pythongroup
     autocmd FileType python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 augroup END
 
-"--- Perl ---"
-augroup perlgroup
-    autocmd!
-    autocmd FileType perl source ~/.vim/scripts/SimpleFold.vim
-augroup END
-
 "=== Mappings ==="
 
 "--- Autocompletion ---"
