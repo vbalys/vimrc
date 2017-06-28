@@ -141,6 +141,12 @@ augroup pythongroup
     autocmd FileType python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 augroup END
 
+"--- PHP ---"
+augroup phpgroup
+    autocmd!
+    autocmd FileType php autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+augroup END
+
 "=== Mappings ==="
 
 "--- Autocompletion ---"
