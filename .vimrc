@@ -72,7 +72,6 @@ set autowrite
 set autoread
 set title
 set noignorecase
-set gdefault
 set fo-=t
 set complete=.,w,b,u,t
 
